@@ -1,0 +1,30 @@
+.search-bar {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid rgb(56, 220, 166);
+    border-radius: 25px;
+    font-style: italic;
+    font-size: medium;
+}
+
+.search-bar:focus {
+    box-shadow: 8px 8px 8px rgb(72, 72, 129)
+}
+
+.books-list{
+    margin-top: 8%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+}
+
+li{
+    background-color: rgba(32, 252, 116, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    border: rgb(7, 218, 7) solid;
+    box-shadow: 3px 8px 10px;
+}

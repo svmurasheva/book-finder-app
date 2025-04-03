@@ -1,6 +1,14 @@
 #root {
   max-width: 1280px;
+  height: 500px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3em;
 }
