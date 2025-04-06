@@ -1,4 +1,4 @@
-
+import BookList from "../BookList";
 import SearchBar from "./SearchBar";
 
 
@@ -8,6 +8,7 @@ const BookFinder = () => {
         <>
             <h2>Book Finder 📖🔦</h2>
             <SearchBar/>
+            <BookList/>
         </>
     );
 };

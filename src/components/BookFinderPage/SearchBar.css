@@ -1,6 +1,6 @@
 .search-bar {
-    width: 50%;
-    padding: 10px;
+    width: 70%;
+    padding: 20px;
     border: 2px solid rgb(56, 220, 166);
     border-radius: 25px;
     font-style: italic;
@@ -21,10 +21,10 @@
     list-style: none;
 }
 
-li{
-    background-color: rgba(32, 252, 116, 0.3);
+.list-items{
+    background-color: rgba(196, 202, 199, 0.3);
     padding: 20px;
     border-radius: 10px;
-    border: rgb(7, 218, 7) solid;
+    border: rgb(4, 108, 4) solid;
     box-shadow: 3px 8px 10px;
 }
