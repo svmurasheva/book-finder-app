@@ -1,18 +1,26 @@
-import { fetchBooks } from "../api/books"
+
 
 
 const Book = ({book}) => {
-    
-// const bookItem = `${book.imageLinks?.smallThumbnail}${book.volumeInfo?.title} ${book.volumeInfo?.authors}`
+
+    const {
+        title,
+        authors,
+        categories,
+        publishedDate,
+        averageRating,
+        imageLinks
+    } = book.volumeInfo;
+
     return (
             <div className="book-item">
-                <img src={book.volumeInfo.imageLinks.smallThumbnail} alt="Book image" />
+                <img src={imageLinks.thumbnail} alt="Book image" />
                 <div className="book-item-info">
-                     <span><strong>Title: </strong>{book.volumeInfo?.title}</span>
-                     <span><strong>Author: </strong>{book.volumeInfo?.authors} </span>
-                     <span><strong>Genre: </strong>{book.volumeInfo?.categories}</span>
-                    
-                    
+                    <span>Title: {title}</span>
+                    {authors && <span>Author: {authors} </span>}
+                    {categories && <span>Genre: {categories}</span>}
+                    {publishedDate && <span>Pablished: {publishedDate}</span>}
+                    {averageRating && <span>Rate: {averageRating}</span>}
                 </div>
             </div>
     )
