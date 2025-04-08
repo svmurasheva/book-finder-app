@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    background-color: var(--secondary-color);
+}
+
+.header a {
+    color: var(--light-color);
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+  }
+  
+.header a:hover {
+    color: var(--dark-color);
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+}
+
+.header-main img {
+    height: 140px;
+}
+
+.header-main h1 {
+    color: var(--light-color);
+    margin-left: 1rem;
+}
