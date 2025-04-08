@@ -12,7 +12,7 @@ const BookList = () => {
     
     return(
         <>
-            <div>
+            <div className="book-list-main-box">
                 {books.map((book) => (
                     <Book key={book.id} book={book}/>
                 ))}

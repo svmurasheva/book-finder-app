@@ -21,10 +21,3 @@
     list-style: none;
 }
 
-.list-items{
-    background-color: rgba(196, 202, 199, 0.3);
-    padding: 20px;
-    border-radius: 10px;
-    border: rgb(4, 108, 4) solid;
-    box-shadow: 3px 8px 10px;
-}

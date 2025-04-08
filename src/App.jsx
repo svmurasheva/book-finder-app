@@ -13,8 +13,7 @@ function App() {
   return (
     <>
       <div className="main-container">
-        <Header/>
-        <Router>
+      <Router>
             <nav>
               <Link to="/">Book Finder</Link> | <Link to="/reading-list-page">Reading List</Link>
             </nav>
@@ -23,7 +22,7 @@ function App() {
           <Route path="/reading-list-page" element={<ReadingList/>}/>
         </Routes>
       </Router>
-      
+      <Header/>
       <Footer />
     </div>
     </>
