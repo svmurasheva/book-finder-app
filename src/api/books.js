@@ -4,4 +4,9 @@ const fetchBooks = async () => {
     return booksMockResponse.items;
 }
 
-export { fetchBooks };
+const fetchBooksByQuery = async (query) => {
+    console.log('fetchBooksByQuery, query:', query);
+    return booksMockResponse.items;
+}
+
+export { fetchBooks, fetchBooksByQuery };
