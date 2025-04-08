@@ -1,4 +1,4 @@
-import RateBar from "./RateBar";
+import RatingBar from "./RatingBar";
 
 
 const Book = ({book}) => {
@@ -20,7 +20,7 @@ const Book = ({book}) => {
                     {authors && <span>Author: {authors} </span>}
                     {categories && <span>Genre: {categories}</span>}
                     {publishedDate && <span>Pablished: {publishedDate}</span>}
-                    {averageRating && <span>Rating: <RateBar stars={averageRating}/></span>}
+                    {averageRating && <span>Rating: <RatingBar stars={averageRating}/></span>}
                     
                 </div>
             </div>

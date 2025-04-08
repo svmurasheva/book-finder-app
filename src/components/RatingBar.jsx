@@ -1,5 +1,5 @@
 
-const RateBar = ({ stars }) => {
+const RatingBar = ({ stars }) => {
     const starsArray = [];
 
     for (let i = 0; i < stars; i++) {
@@ -17,4 +17,4 @@ const RateBar = ({ stars }) => {
     );
 };
 
-export default RateBar;
+export default RatingBar;
