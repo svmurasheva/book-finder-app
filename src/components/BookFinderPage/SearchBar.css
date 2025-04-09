@@ -1,23 +1,14 @@
 .search-bar {
     width: 70%;
     padding: 20px;
-    border: 2px solid rgb(56, 220, 166);
+    border: 2px solid var(--orange-color);
     border-radius: 25px;
     font-style: italic;
     font-size: medium;
 }
 
 .search-bar:focus {
-    box-shadow: 8px 8px 8px rgb(72, 72, 129)
+    box-shadow: 4px 4px 4px rgb(72, 72, 129)
 }
 
-.books-list{
-    margin-top: 8%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    list-style: none;
-}
 

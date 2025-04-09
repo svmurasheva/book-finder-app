@@ -6,7 +6,7 @@ const SearchBar = ({query, setQuery}) => {
         <input className="search-bar"
             size="42"
             type="text"
-            placeholder="🔍 Search for a book by title, author or genre"
+            placeholder="Search for a book by title, author or genre"
             value ={query}         
             onChange={event => setQuery(event.target.value)}
         />

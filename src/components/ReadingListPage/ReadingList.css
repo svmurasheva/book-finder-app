@@ -1,22 +1,28 @@
-.reading-list-container{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-
-}
-
 .reading-list-items{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 40px;
+    padding: 12px;
+    margin-top: 30px;
     
-    background-color: rgba(196, 202, 199, 0.3);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: rgb(4, 108, 4) solid;
-    box-shadow: 3px 8px 10px;
 }
 .reading-list{
     display:flex;
     flex-direction: row;
     align-items: center;
+    text-align: center;
+    border-color: black;
+    width: 100%;
+} 
+.reading-list:hover{
+    background-color: rgba(206, 201, 201, 0.3);
+}
+.reading-list-main{
+    margin-bottom: 3em;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    list-style: none;
     
 }
+
