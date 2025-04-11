@@ -23,14 +23,7 @@ const ReadingList = () => {
                         <li className="reading-list-items">Added book</li>
                         <button>Delete</button>
                     </div>
-                    <div className="reading-list">
-                        <li className="reading-list-items">Added book</li>
-                        <button>Delete</button>
-                    </div>
-                    <div className="reading-list">
-                        <li className="reading-list-items">Added book</li>
-                        <button>Delete</button>
-                    </div>
+                    
                 </ul>
             </div>
             

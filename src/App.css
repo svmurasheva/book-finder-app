@@ -7,6 +7,7 @@
   --light-color: #8c8888;
   --dark-color: #111111;
   --orange-color: #edad37;
+  --brown-color: #b67737;
 }
 
 * {
@@ -21,7 +22,7 @@ a {
 #root {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  max-width: 1280px;
+  
   text-align: center;
   background-color: var(--primary-color);
 }

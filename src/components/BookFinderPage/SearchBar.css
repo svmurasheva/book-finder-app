@@ -7,8 +7,15 @@
     font-size: medium;
 }
 
-.search-bar:focus {
-    box-shadow: 4px 4px 4px rgb(72, 72, 129)
+.search-bar:hover{
+    outline: 2px solid var(--brown-color);
+	outline-offset: -2px;
+    box-shadow: inset;
 }
+*:focus {
+    outline: none;
+}
+
+
 
 
