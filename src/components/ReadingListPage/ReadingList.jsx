@@ -1,5 +1,6 @@
 import "./ReadingList.css"
 
+
 const ReadingList = () => {
 
     return (
@@ -9,19 +10,23 @@ const ReadingList = () => {
                 <ul className="reading-list-container">
                     <div className="reading-list">
                         <li className="reading-list-items">Added book</li>
-                        <button>Delete</button>
+                        <button><i className="fa-solid fa-book-open read"></i></button>
+                        <button><i className="fa-solid fa-trash delete"></i></button>
                     </div>
                     <div className="reading-list">
                         <li className="reading-list-items">Added book</li>
-                        <button>Delete</button>
+                        <button><i className="fa-solid fa-book-open read"></i></button>
+                        <button><i className="fa-solid fa-trash delete"></i></button>
                     </div>
                     <div className="reading-list">
                         <li className="reading-list-items">Added book</li>
-                        <button>Delete</button>
+                        <button><i className="fa-solid fa-book-open read"></i></button>
+                        <button><i className="fa-solid fa-trash delete"></i></button>
                     </div>
                     <div className="reading-list">
                         <li className="reading-list-items">Added book</li>
-                        <button>Delete</button>
+                        <button><i className="fa-solid fa-book-open read"></i></button>
+                        <button><i className="fa-solid fa-trash delete"></i></button>
                     </div>
                     
                 </ul>

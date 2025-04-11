@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer'
 import {BrowserRouter as Router, Routes, Route, Link, Form} from "react-router-dom"
 import {useState, useEffect} from "react"
 
+
 function App() {
   const [data, setData] = useState()
 

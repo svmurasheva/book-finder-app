@@ -32,3 +32,23 @@ a {
   flex-direction: column;
   align-items: center;
 }
+button{
+  background-color: none;
+  border-radius: 30px;
+  width: 50px;
+  height: 40px;
+  border: var(--primary-color);
+  margin-right: 2em;
+  font-size: medium;
+}
+button i.delete{
+  color:#2d2d74;
+}
+
+button i.read{
+  color:orange;
+}
+
+button i.read:hover {
+  color: #96c048; 
+}

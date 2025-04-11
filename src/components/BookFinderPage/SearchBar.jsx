@@ -12,6 +12,7 @@ const SearchBar = ({query, setQuery}) => {
                 value ={query}         
                 onChange={event => setQuery(event.target.value)}
             />
+            
         </>
         
     );
