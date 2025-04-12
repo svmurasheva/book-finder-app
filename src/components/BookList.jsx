@@ -4,7 +4,6 @@ import "./BookList.css";
 
 const BookList = ({books}) => {
    
-    
     return(
         <>
             <div className="book-list-main-box">

@@ -5,6 +5,7 @@
     align-items: start;
     padding: 12px;
     margin-top: 30px;
+    max-width: 750px;
 }
 
 .book-item:hover {
@@ -17,6 +18,11 @@
     gap: 6px;
     text-align: start;
 
+}
+
+.like-button {
+    all: unset;
+    cursor: pointer;
 }
 
 .heart {

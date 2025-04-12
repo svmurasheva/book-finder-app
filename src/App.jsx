@@ -3,18 +3,13 @@ import Header from './components/Header/Header'
 import BookFinder from './components/BookFinderPage/BookFinder'
 import ReadingList from './components/ReadingListPage/ReadingList'
 import Footer from './components/Footer/Footer'
-import {BrowserRouter as Router, Routes, Route, Link, Form} from "react-router-dom"
-import {useState, useEffect} from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 
-function App() {
-  const [data, setData] = useState()
-
-  // https://www.googleapis.com/books/v1/volumes?q=intitle:nasa+inauthor:Bromberg
-  
+function App() {  
   return (
     <>
-      <div className="main-container">
+      <div className="main">
       <Router>
         <Header/>    
         <Routes>

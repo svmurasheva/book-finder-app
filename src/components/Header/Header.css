@@ -10,8 +10,7 @@
 .header a {
     color: var(--dark-color);
     padding: 0.45rem;
-    margin: 0 2rem;
-    
+    margin: 0 1.5rem;
   }
   
 .header a:hover {

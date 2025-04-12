@@ -1,11 +1,11 @@
 import './Header.css'
 import logoImg from '../../assets/image.png';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 
     return(
-        <div className='header'>
+        <div className='header container'>
             <div className='header-main'>
                 <img src={logoImg} alt="Logo" />
                 <h1>Book Finder</h1>

@@ -10,17 +10,14 @@ const BookFinder = () => {
     const [query, setQuery] = useState('')
 
     useEffect(() => {
-    fetchBooksByQuery(query, 10, 0).then(setBooks);
-      }, [query]);
+        fetchBooksByQuery(query, 10, 0).then(setBooks);
+    }, [query]);
 
     return(
-        <>
-            <div className="book-finder-main-box">
+        <div className="book-finder container">
             <SearchBar query={query} setQuery={setQuery}/>
             <BookList books={books}/>
-            </div>
-            
-        </>
+        </div>
     );
 };
 

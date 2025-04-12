@@ -1,10 +1,9 @@
 import RatingBar from "./RatingBar";
-import {useState} from "react";
+import { useState } from "react";
+import { LIKED_BOOKS_LOCAL_STORAGE_KEY } from "../config/constants";
 
 
 const Book = ({book}) => {
-
-    const LIKED_BOOKS_LOCAL_STORAGE_KEY = "book-finder.liked-books";
 
     const {
         title,
@@ -51,9 +50,9 @@ const Book = ({book}) => {
                             </span>
                         )}
                     </div>
-                    <a onClick={handleClick}>
+                    <button onClick={handleClick} className="like-button" aria-label="Like book">
                         <i className={likedBook ? "fa-solid fa-heart heart" : "fa-regular fa-heart heart"}></i>
-                    </a>
+                    </button>
                 </div>
             </div>
         </a>

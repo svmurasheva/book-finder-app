@@ -19,6 +19,16 @@ const fetchBooksByQuery = async (query, pageSize, pageNum) => {
     }
 }
 
+const fetchBooksByIds = async (ids) => {
+    console.log("fetchBooksByIds, ids:", ids);
+    return Promise.all(ids.map(fetchBookById));
+}
+
+const fetchBookById = async (id) => {
+    const response = await fetch(`${url}/${id}`);
+    return response.json();
+}
+
 const buildQueryParams = (query, pageSize, pageNum) => {
     // intitle:${query}+inauthor:${query}+subject:${query}
     const urlSearchParams = new URLSearchParams({
@@ -49,4 +59,4 @@ const returnMockData = (query, pageSize, pageNum) => {
     return books.slice(startIndex, endIndex);
   };
 
-export { fetchBooksByQuery };
+export { fetchBooksByQuery, fetchBooksByIds };
