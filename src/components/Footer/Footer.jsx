@@ -8,7 +8,7 @@ const Footer = () => {
     const linkedInIcon = <a 
                           href="https://linkedin.com/in/svitlana-murasheva-328571232"
                           target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
+                            <i className="fa-brands fa-linkedin"></i>
                         </a>;
     const gitHubIcon = <a 
                         href="https://github.com/svmurasheva" 

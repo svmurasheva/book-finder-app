@@ -1,6 +1,6 @@
 import BookList from "../BookList";
 import SearchBar from "./SearchBar";
-import { fetchBooks, fetchBooksByQuery } from "../../api/books";
+import { fetchBooksByQuery } from "../../api/books";
 import {useState, useEffect} from "react";
 import "./BookFinder.css"
 
@@ -10,7 +10,7 @@ const BookFinder = () => {
     const [query, setQuery] = useState('')
 
     useEffect(() => {
-        fetchBooksByQuery(query).then(setBooks);
+    fetchBooksByQuery(query, 10, 0).then(setBooks);
       }, [query]);
 
     return(

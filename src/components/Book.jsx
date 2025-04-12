@@ -14,7 +14,7 @@ const Book = ({book}) => {
 
     return (
         <div className="book-item">
-        <img src={imageLinks.thumbnail} alt="Book image" />
+        <img src={imageLinks?.thumbnail} alt="Book image" />
         
         <div className="book-item-info-wrapper">
             <div className="book-item-info">
