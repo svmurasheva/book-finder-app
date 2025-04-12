@@ -10,9 +10,6 @@
 .book-item:hover {
     background-color: rgba(206, 201, 201, 0.3);  
 }
-.book-item:hover .heart {
-    color: #e74c3c; 
-}
 
 .book-item-info {
     display: flex;
@@ -21,10 +18,17 @@
     text-align: start;
 
 }
+
 .heart {
     font-size: 1.5rem;
     color: #e74c3c;
     cursor: pointer;
-    margin-left: 16px;
-    
+    margin-left: 16px; 
+}
+
+.heart:hover {
+    color: #e74c3c;
+    transform: scale(1.15);
+    transition: all 0.4s ease;
+    text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
 }
