@@ -12,9 +12,7 @@
     border-color: black;
     width: 100%;
 } 
-.reading-list:hover{
-    background-color: rgba(206, 201, 201, 0.3);
-}
+
 .reading-list-main{
     margin-bottom: 3em;
     width: 100%;
@@ -22,5 +20,9 @@
     flex-direction: column;
     list-style: none;
     min-height: 51vh;
+}
+
+h2{
+    margin-bottom: 30px;
 }
 

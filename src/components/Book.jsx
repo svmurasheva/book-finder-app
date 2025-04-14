@@ -1,9 +1,9 @@
 import RatingBar from "./RatingBar";
 import { useState } from "react";
-import { LIKED_BOOKS_LOCAL_STORAGE_KEY } from "../config/constants";
+import { removeLikedBookId, addLikedBookId, isLikedBookId } from "../utils/localStorage";
 
 
-const Book = ({book}) => {
+const Book = ({book, showLike}) => {
 
     const {
         title,
@@ -17,20 +17,16 @@ const Book = ({book}) => {
 
     const id = book.id;
 
-    const [likedBook, setLikedBook] = useState (
-        JSON.parse(localStorage.getItem(LIKED_BOOKS_LOCAL_STORAGE_KEY) ?? '[]').includes(id)
-    );
+    const [likedBook, setLikedBook] = useState (isLikedBookId(id));
 
     const handleClick = (e) => {
         e.preventDefault();
         setLikedBook(!likedBook);
-        let likedBooks = JSON.parse(localStorage.getItem(LIKED_BOOKS_LOCAL_STORAGE_KEY) ?? '[]');
         if (likedBook) {
-            likedBooks = likedBooks.filter(bookId => bookId !== id);
+            removeLikedBookId(id);
         } else {
-            likedBooks = [...likedBooks, id];
+            addLikedBookId(id);
         }
-        localStorage.setItem(LIKED_BOOKS_LOCAL_STORAGE_KEY, JSON.stringify(likedBooks));
     }
 
     return (
@@ -50,9 +46,9 @@ const Book = ({book}) => {
                             </span>
                         )}
                     </div>
-                    <button onClick={handleClick} className="like-button" aria-label="Like book">
+                    {showLike && <button onClick={handleClick} className="like-button" aria-label="Like book">
                         <i className={likedBook ? "fa-solid fa-heart heart" : "fa-regular fa-heart heart"}></i>
-                    </button>
+                    </button>}
                 </div>
             </div>
         </a>

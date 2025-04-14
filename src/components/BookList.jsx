@@ -8,7 +8,7 @@ const BookList = ({books}) => {
         <>
             <div className="book-list-main-box">
                 {books.map((book) => (
-                    <Book key={book.id} book={book}/>
+                    <Book key={book.id} book={book} showLike={true}/>
                 ))}
             </div>  
         </>
