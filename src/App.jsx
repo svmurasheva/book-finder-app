@@ -10,14 +10,13 @@ function App() {
   return (
     <>
       <div className="main">
-      <Router>
+      <Router basename='/book-finder-app/'>
         <Header/>    
         <Routes>
-          <Route path="/" element={<BookFinder/>}/>
+          <Route index path="/" element={<BookFinder/>}/>
           <Route path="/reading-list-page" element={<ReadingList/>}/>
         </Routes>
       </Router>
-      
       <Footer />
     </div>
     </>
