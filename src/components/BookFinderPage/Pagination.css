@@ -13,7 +13,13 @@
     border-radius: 4px;
 }
 
-.pagination button.active {
+.pagination button:hover {
     background: var(--dark-color);
     color: var(--orange-color);
+}
+
+.pagination button.page-num {
+    background: var(--dark-color);
+    color: var(--orange-color);
+    cursor: default;
 }

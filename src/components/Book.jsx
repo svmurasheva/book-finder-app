@@ -38,20 +38,23 @@ const Book = ({book, showLike}) => {
                 
                 <div className="book-item-info-wrapper">
                     <div className="book-item-info">
-                        <span><span clsssName="label">Title:</span> {title}</span>
-                        {subtitle && <span><span clsssName="label">Subtitle:</span> {subtitle}</span>}
-                        {authors && <span><span clsssName="label">Author:</span> {authors.join(", ")} </span>}
-                        {categories && <span><span clsssName="label">Genre:</span> {categories}</span>}
-                        {publishedDate && <span><span clsssName="label">Publisher:</span> {publishedDate}</span>}
+                        <span><span className="label">Title:</span> {title}</span>
+                        {subtitle && <span><span className="label">Subtitle:</span> {subtitle}</span>}
+                        {authors && <span><span className="label">Author:</span> {authors.join(", ")} </span>}
+                        {categories && <span><span className="label">Genre:</span> {categories}</span>}
+                        {publishedDate && <span><span className="label">Publisher:</span> {publishedDate}</span>}
                         {averageRating && (
                             <span>
-                                <span clsssName="label">Rating:</span> <RatingBar stars={averageRating} />
+                                <span className="label">Rating:</span> <RatingBar stars={averageRating} />
                             </span>
                         )}
+                    </div> 
+                    <div className="heart-button">
+                        {showLike && <button onClick={handleClick} className="like-button" aria-label="Like book">
+                            <i className={likedBook ? "fa-solid fa-heart heart" : "fa-regular fa-heart heart"}></i>
+                        </button>}
                     </div>
-                    {showLike && <button onClick={handleClick} className="like-button" aria-label="Like book">
-                        <i className={likedBook ? "fa-solid fa-heart heart" : "fa-regular fa-heart heart"}></i>
-                    </button>}
+                    
                 </div>
             </div>
         </a>

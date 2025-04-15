@@ -10,12 +10,12 @@ const fetchBooksByQuery = async (query, pageSize, pageNum) => {
             const books = (await response.json())?.items;
             return books ? books : [];
         } else {
-            return returnMockData(query, pageSize, pageNum);
+            return returnMockData(query, pageSize, startIndex);
         }
     } catch(err) {
         console.error("Error when calling book API: ", err);
         console.log("Returning mock response instead");
-        return returnMockData(query, pageSize, pageNum);
+        return returnMockData(query, pageSize, startIndex);
     }
 }
 
@@ -33,7 +33,7 @@ const buildQueryParams = (query, pageSize, pageNum) => {
     // intitle:${query}+inauthor:${query}+subject:${query}
     const urlSearchParams = new URLSearchParams({
         q: `${query ? query : "''"}`,
-        startIndex: pageNum,
+        startIndex: (pageNum - 1) * pageSize,
         maxResults: pageSize
     });
     return urlSearchParams.toString();``
