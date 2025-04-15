@@ -23,10 +23,32 @@
 }
 
 .header-main img {
+    margin-left: 30px;
     height: 140px;
 }
 
 .header-main h1 {
     color: var(--dark-color);
     margin-left: 1rem;
+}
+
+@media (max-width: 825px) {
+    .header-main h1 {
+        display: none;
+    }
+
+    .header {
+        min-width: 365px;
+    }
+
+    .header a {
+        color: var(--dark-color);
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+
+    .header-main img {
+        margin-left: 20px;
+        height: 125px;
+    }
 }

@@ -1,28 +1,40 @@
-.reading-list-items{
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 40px;
-    padding: 2.5em;
-    align-items: center;
-}
-.reading-list{
+.reading-list {
     display:flex;
     flex-direction: row;
     align-items: center;
     border-color: black;
-    width: 100%;
 } 
 
-.reading-list-main{
+.reading-list-main {
     margin-bottom: 3em;
-    width: 100%;
     display:flex;
     flex-direction: column;
     list-style: none;
     min-height: 51vh;
 }
 
-h2{
+h2 {
     margin-bottom: 30px;
 }
 
+.reading-list .button {
+    border: var(--primary-color);
+    margin: 5px;
+    cursor: pointer;
+  }
+
+.reading-list button i.delete{
+    color:#2d2d74;
+}
+
+.reading-list button i.delete:hover {
+    color: #4896c0; 
+}
+
+.reading-list .button i.read{
+    color:orange;
+}
+
+.reading-list .button i.read:hover {
+    color: #96c048; 
+}

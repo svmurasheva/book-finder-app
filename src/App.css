@@ -28,47 +28,8 @@ a {
   background-color: var(--primary-color);
 }
 
-.container {
-  min-width: 650px;
-}
-
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.button {
-  all: unset;
-  border-radius: 30px;
-  width: 50px;
-  height: 40px;
-  border: var(--primary-color);
-  margin: 0 4em 0 2em;
-  font-size: medium;
-  cursor: pointer;
-
-}
-button i.delete{
-  color:#2d2d74;
-}
-
-button i.delete:hover {
-  color: #4896c0; 
-}
-
-button i.delete:active{
-  width: 50px;
-}
-
-.button i.read{
-  color:orange;
-}
-
-.button i.read:hover {
-  color: #96c048; 
-}
-
-.button i.read:active{
-  width: 50px;
 }
