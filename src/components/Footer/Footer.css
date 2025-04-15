@@ -1,4 +1,4 @@
-.footer-main-box{
+.footer-main-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,12 @@ i {
     font-size: 30px;
 }
 
-i:hover{
+i:hover {
     color: var(--primary-color);
+}
+
+@media (max-width: 825px) { 
+    .footer-main-box{
+        font-size: 12px;
+    }
 }

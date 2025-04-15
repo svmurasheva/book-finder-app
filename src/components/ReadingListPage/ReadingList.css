@@ -1,5 +1,5 @@
 .reading-list {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     border-color: black;
@@ -37,4 +37,15 @@ h2 {
 
 .reading-list .button i.read:hover {
     color: #96c048; 
+}
+
+@media (max-width: 600px) {
+    .reading-list i {
+        font-size: 1.5em;
+    }
+
+    .reading-list a {
+        padding: 0;
+        margin: 0;
+    }
 }

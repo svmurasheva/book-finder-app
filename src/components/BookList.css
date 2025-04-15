@@ -85,9 +85,9 @@
 
 @media (max-width: 825px) { 
     .book-item {
-        /* padding: 5px; */
-        /* margin: 1em; */
-        max-width: 350px;
+        padding: 0px;
+        margin: 10px 0 10px 20px;
+        max-width: 385px;
         height: 140px;
         font-size: 12px;
     }
@@ -114,12 +114,26 @@
     }
     
     .book-item-info .authors {
-        margin-top: 6px;
+        margin-top: 0px;
     }
     
     .book-item-info .authors,
     .book-item-info .genre,
     .book-item-info .published {
         font-size: 0.95em;
+    }
+  }
+
+  @media (max-width: 440px) {
+    .book-item {
+        padding: 0px;
+        margin: 10px 0 10px 20px;
+        max-width: 350px;
+        height: 120px;
+        font-size: 11px;
+    }
+
+    .book-item img {
+        height: 120px; 
     }
   }

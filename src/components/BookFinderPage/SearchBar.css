@@ -17,6 +17,13 @@
     outline: none;
 }
 
+@media (max-width: 825px) {
+    .search-bar {
+        padding: 15px;
+        font-size: 12px;
+    }
+}
+
 
 
 
