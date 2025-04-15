@@ -14,7 +14,10 @@
 }
 
 .book-item img {
-    height: 190px; 
+    height: 190px;
+    max-width: 140px;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .book-item-info {
@@ -86,14 +89,15 @@
 @media (max-width: 825px) { 
     .book-item {
         padding: 0px;
-        margin: 10px 0 10px 20px;
+        margin: 10px 0 10px 0;
         max-width: 385px;
         height: 140px;
         font-size: 12px;
     }
 
     .book-item img {
-        height: 140px; 
+        width: 100px;
+        height: 130px;
     }
 
     .book-item-info {
@@ -127,13 +131,9 @@
   @media (max-width: 440px) {
     .book-item {
         padding: 0px;
-        margin: 10px 0 10px 20px;
+        margin: 15px 0 15px 0;
         max-width: 350px;
         height: 120px;
         font-size: 11px;
-    }
-
-    .book-item img {
-        height: 120px; 
     }
   }

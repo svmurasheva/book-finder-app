@@ -43,7 +43,6 @@ const Book = ({book, showLike}) => {
     return (
         <a href={infoLink ?? '#'} target="_blank">
             <div className="book-item">
-                {/* <div className="book-item-info-wrapper"> */}
                     <img src={imageLinks?.thumbnail} alt="Book image" />
                     <div className="book-item-info">
                         <span className="title">{formatStrInfo(title)}</span>
@@ -60,7 +59,6 @@ const Book = ({book, showLike}) => {
                             <i className={likedBook ? "fa-solid fa-heart heart" : "fa-regular fa-heart heart"}></i>
                         </button>}
                     </div>
-                {/* </div> */}
             </div>
         </a>
     )

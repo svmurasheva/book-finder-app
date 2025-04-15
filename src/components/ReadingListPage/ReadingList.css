@@ -3,6 +3,7 @@
     flex-direction: row;
     align-items: center;
     border-color: black;
+    margin: 0 10px;
 } 
 
 .reading-list-main {

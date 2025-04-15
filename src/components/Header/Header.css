@@ -41,6 +41,10 @@
         min-width: 365px;
     }
 
+    .header nav {
+        margin-right: 18px;
+    }
+
     .header a {
         color: var(--dark-color);
         padding: 0;
