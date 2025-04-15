@@ -21,7 +21,7 @@ const ReadingList = () => {
     
     return (
         <div className="reading-list-main">
-            <h2>Reading List </h2>
+            {likedBooks.length === 0 && <h2>Your reading list is empty...</h2>}
             <ul className="reading-list-container">
                 {likedBooks.map((book) => (
                     <div className="reading-list">

@@ -1,26 +1,47 @@
 .book-item {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 40px;
+    display: flex;
+    justify-content: space-between;
     align-items: start;
+    gap: 25px;
     padding: 12px;
     margin: 2em;
-    max-width: 750px;
-    min-width: 774px;
-    height: 228px;
+    width: 775px;
+    height: 190px;
 }
 
 .book-item:hover {
     background-color: rgba(206, 201, 201, 0.3);  
 }
 
+.book-item img {
+    height: 190px; 
+}
+
 .book-item-info {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 10px;
     text-align: start;
-    width: 496px;
+    width: 465px;
 
+}
+
+.book-item-info .title {
+    font-size: 1.15em;
+}
+
+.book-item-info .subtitle {
+    font-style: italic;
+}
+
+.book-item-info .authors {
+    margin-top: 10px;
+}
+
+.book-item-info .authors,
+.book-item-info .genre,
+.book-item-info .published {
+    font-size: 0.95em;
 }
 
 .label {
@@ -53,4 +74,8 @@
 
 .heart-button{
     margin-left: 5em;
+}
+
+.rate-bar {
+    margin: 0;
 }

@@ -17,6 +17,15 @@ const Book = ({book, showLike}) => {
         infoLink
     } = book.volumeInfo;
 
+    const formatArayInfo = (arr) => {
+        const infoStr = arr?.join(", "); 
+        return infoStr?.length < 50 ? infoStr : `${infoStr?.substring(0, 50)}...`
+    }
+
+    const formatStrInfo = (str) => {
+        return str?.length < 50 ? str : `${str?.substring(0, 50)}...`
+    }
+
     const id = book.id;
 
     const [likedBook, setLikedBook] = useState (isLikedBookId(id));
@@ -38,15 +47,13 @@ const Book = ({book, showLike}) => {
                 
                 <div className="book-item-info-wrapper">
                     <div className="book-item-info">
-                        <span><span className="label">Title:</span> {title}</span>
-                        {subtitle && <span><span className="label">Subtitle:</span> {subtitle}</span>}
-                        {authors && <span><span className="label">Author:</span> {authors.join(", ")} </span>}
-                        {categories && <span><span className="label">Genre:</span> {categories}</span>}
-                        {publishedDate && <span><span className="label">Publisher:</span> {publishedDate}</span>}
+                        <span className="title">{formatStrInfo(title)}</span>
+                        {subtitle && <p className="subtitle">{formatStrInfo(subtitle)}</p>}
+                        {authors && <p className="authors">By {formatArayInfo(authors)} </p>}
+                        {categories && <p className="genre">Genre: {formatArayInfo(categories)}</p>}
+                        {publishedDate && <p className="published">Published: {publishedDate}</p>}
                         {averageRating && (
-                            <span>
-                                <span className="label">Rating:</span> <RatingBar stars={averageRating} />
-                            </span>
+                            <RatingBar stars={averageRating} />  
                         )}
                     </div> 
                     <div className="heart-button">
@@ -54,7 +61,6 @@ const Book = ({book, showLike}) => {
                             <i className={likedBook ? "fa-solid fa-heart heart" : "fa-regular fa-heart heart"}></i>
                         </button>}
                     </div>
-                    
                 </div>
             </div>
         </a>

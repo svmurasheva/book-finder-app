@@ -10,7 +10,7 @@ const removeLikedBookId = (id) => {
 };
 
 const addLikedBookId = (id) => {
-    const likedBooks = [...getLikedBookIds(), id];
+    const likedBooks = [id, ...getLikedBookIds()];
     storeLikedBooksIds(likedBooks);
 };
 
