@@ -38,13 +38,13 @@ a {
   align-items: center;
 }
 
-button {
+.button {
   all: unset;
   border-radius: 30px;
   width: 50px;
   height: 40px;
   border: var(--primary-color);
-  margin: 0 2em 0 2em;
+  margin: 0 4em 0 2em;
   font-size: medium;
   cursor: pointer;
 
@@ -61,14 +61,14 @@ button i.delete:active{
   width: 50px;
 }
 
-button i.read{
+.button i.read{
   color:orange;
 }
 
-button i.read:hover {
+.button i.read:hover {
   color: #96c048; 
 }
 
-button i.read:active{
+.button i.read:active{
   width: 50px;
 }

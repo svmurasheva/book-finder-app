@@ -3,10 +3,12 @@ import { useState } from "react";
 import { removeLikedBookId, addLikedBookId, isLikedBookId } from "../utils/localStorage";
 
 
+
 const Book = ({book, showLike}) => {
 
     const {
         title,
+        subtitle,
         authors,
         categories,
         publishedDate,
@@ -36,13 +38,14 @@ const Book = ({book, showLike}) => {
                 
                 <div className="book-item-info-wrapper">
                     <div className="book-item-info">
-                        <span>Title: {title}</span>
-                        {authors && <span>Author: {authors.join(", ")} </span>}
-                        {categories && <span>Genre: {categories}</span>}
-                        {publishedDate && <span>Published: {publishedDate}</span>}
+                        <span><span clsssName="label">Title:</span> {title}</span>
+                        {subtitle && <span><span clsssName="label">Subtitle:</span> {subtitle}</span>}
+                        {authors && <span><span clsssName="label">Author:</span> {authors.join(", ")} </span>}
+                        {categories && <span><span clsssName="label">Genre:</span> {categories}</span>}
+                        {publishedDate && <span><span clsssName="label">Publisher:</span> {publishedDate}</span>}
                         {averageRating && (
                             <span>
-                                Rating: <RatingBar stars={averageRating} />
+                                <span clsssName="label">Rating:</span> <RatingBar stars={averageRating} />
                             </span>
                         )}
                     </div>

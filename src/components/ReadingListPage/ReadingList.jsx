@@ -30,7 +30,7 @@ const ReadingList = () => {
                             <a href={book.volumeInfo.previewLink ?? "#"} target="_blank" className="button">
                                 <i className="fa-solid fa-book-open read"></i>
                             </a>
-                            <button onClick={(e) => handleDeleteButton(e, book.id)}>
+                            <button className="button" onClick={(e) => handleDeleteButton(e, book.id)}>
                                 <i className="fa-solid fa-trash delete"></i>
                             </button>
                         </div>
