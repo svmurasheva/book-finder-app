@@ -1,7 +1,7 @@
 import "./ReadingList.css";
 import { fetchBooksByIds } from "../../api/books";
 import{ useState, useEffect } from "react";
-import Book from "../Book";
+import Book from "../Book/Book";
 import { getLikedBookIds, removeLikedBookId } from "../../utils/localStorage"; 
 
 

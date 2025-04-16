@@ -13,9 +13,6 @@
 	outline-offset: -2px;
     box-shadow: inset;
 }
-*:focus {
-    outline: none;
-}
 
 @media (max-width: 825px) {
     .search-bar {

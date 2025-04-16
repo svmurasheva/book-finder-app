@@ -1,3 +1,5 @@
+import "./RatingBar.css"
+
 
 const RatingBar = ({ stars }) => {
     const starsArray = [];
@@ -11,7 +13,7 @@ const RatingBar = ({ stars }) => {
     }
 
     return (
-        <span className="rate-bar">
+        <span className="rating-bar">
             {starsArray}
         </span>
     );

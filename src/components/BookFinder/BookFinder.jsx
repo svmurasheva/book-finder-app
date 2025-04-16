@@ -1,9 +1,9 @@
-import BookList from "../BookList";
-import SearchBar from "./SearchBar";
+import BookList from "../BookList/BookList";
+import SearchBar from "../SearchBar/SearchBar";
 import { fetchBooksByQuery } from "../../api/books";
 import {useState, useEffect} from "react";
+import Pagination from "../Pagination/Pagination";
 import "./BookFinder.css"
-import Pagination from "./Pagination";
 
 
 

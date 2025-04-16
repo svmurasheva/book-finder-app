@@ -1,8 +1,7 @@
-import RatingBar from "./RatingBar";
+import RatingBar from "../RatingBar/RatingBar";
 import { useState } from "react";
-import { removeLikedBookId, addLikedBookId, isLikedBookId } from "../utils/localStorage";
-
-
+import { removeLikedBookId, addLikedBookId, isLikedBookId } from "../../utils/localStorage";
+import "./Book.css"
 
 const Book = ({book, showLike}) => {
 

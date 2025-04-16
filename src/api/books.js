@@ -30,7 +30,7 @@ const fetchBookById = async (id) => {
 }
 
 const buildQueryParams = (query, pageSize, pageNum) => {
-    // intitle:${query}+inauthor:${query}+subject:${query}
+    
     const urlSearchParams = new URLSearchParams({
         q: `${query ? query : "''"}`,
         startIndex: (pageNum - 1) * pageSize,
